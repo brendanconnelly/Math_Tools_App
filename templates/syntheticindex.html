@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Synthetic Division Calculator{% endblock %}
+
+{% block title %}Synthetic Division Calculator{% endblock %}
+
+{% block shortdesciption %}This is a calculator to calculate synthetic divison, which is polynomial divison, where the divisor is in the form of x - r{% endblock %}
+
+{% block content %}
+	<center><form action="#" method="post">
+		<p>You may enter both the polynomial and the r value below. Put spaces between the coefficents of the polynomial. And then please enter the r value of your divisor, in the form x - r: </p>
+		<span>Your polynomial: <input type="text" name="data" style = "width:20%"/></span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span>Your r value: <input type="text" name="rvalue" style = "width:10%"/></span>
+		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
+	</form>
+	<hr/>
+	<br><br><br>
+		<h3 style="color: green">What is Synthetic Division??</h3>
+		<br>
+		<p style="padding-left: 200px; padding-right: 200px;">Synthetic division is a kind of shortcut method to polynomial division. This method is only applicable when the divisor is in the form of x -r. What this means is that for this more efficent method of division to work, you need to be dividing by x - some number, it can't x squared or anything beyond x more than a binomial. However, it is still super useful to check for the zeros of a polynomial. <br><br><b>Check out this Khan Academy Video on how this works if you need help. But we also try to explain our work thouroughly here.</b><br></p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/1byR9UEQJN0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Number Info{% endblock %}
+
+{% block title %}Number Info{% endblock %}
+
+{% block shortdesciption %}This is a calculator to find the prime factorization, number of factors, etc{% endblock %}
+
+{% block content %}
+	<center><form action="#" method="post">
+		<p>Please enter your number below: </p>
+		<p><input type="text" name="data" style = "width:20%"/></p>
+		<p><input type="submit" value="Submit" style = "width:10%; color:brown"/></p>
+	</form>
+	<hr/>
+	<br><br><br>
+		<h3 style="color: green">What is this page?? What do we mean by basic information about a number?</h3>
+		<br>
+		<p style="padding-left: 200px; padding-right: 200px;">What we are talking mostly has to do with prime factorization. We will run a program using a list of over 250,000 prime numbers to disover the prime factorization. From this, we can discover the number of factors your number has, the actual factors, etc.<br><br> Additionally, we will give you your number in the form of a * b!, where ! means factorial meaning b * (b-1) * (b - 2)...<br>And lastly we will provide you with basic information that a calculator might give, square root, cube root, etc. <br><br><b>If you do not know how to find the prime factorization of a number, we encourage you to watch the Khan Academy Video below<br><br></b></p>
+	<iframe width="591px" height="333px" src="https://www.youtube.com/embed/ZKKDTfHcsG0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</center>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}

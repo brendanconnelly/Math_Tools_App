@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Base Converter{% endblock %}
+
+{% block title %}Welcome to this Base Converter{% endblock %}
+
+
+{% block shortdesciption %}This is a calculator to convert any number from any base to any other. {% endblock %}
+
+{% block content %}
+	<center><form action="#" method="post">
+		<p>Please enter your number, the base it is in currently, and the base you would like it to be in: </p>
+		<span>Number: <input type="text" name="data1" style = "width:7%"/></span>&nbsp;&nbsp;
+		<span>Current base: <input type="text" name="data2" style = "width:7%"/></span>&nbsp;&nbsp;
+		<span>New base: <input type="text" name="data3" style = "width:7%"/></span>&nbsp;&nbsp;
+
+		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
+	</form>
+	<hr/>
+	<br><br><br>
+		<h3 style="color: green">What is Base?? How does this caculator work?</h3>
+		<br>
+		<p style="padding-left: 200px; padding-right: 200px;">We use base 10, meaning we count up to ten, then start repeating assuming the next digit has ten times the previous place value. With this calculator, we use various techniques to convert our number to base 10, and from there to the base we desire. There are two ways you may enter your values. The first is without parentheses which you can represent with 35 digits using 1 - 9 and capital A-Z from 10 - 35. If you need to include larger individual digit values, especially if using larger bases, you may just type every indvidual digit value in parentheses. This is also an option for letters and values 10 - 35. There are many ways for you to enter your values. <br><br><b>Check out this Khan Academy Video for a bit of an introduction to base but we also try to offer a brief explaination for each of the problems you give us.</b><br></p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Fpm-E5v6ddc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}

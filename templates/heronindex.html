@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Heron's Formula{% endblock %}
+
+{% block title %}Welcome to this Heron's Formula Calculator{% endblock %}
+
+{% block shortdesciption %}This is a calculator to determine the area of any triangle from its side lengths{% endblock %}
+
+{% block content %}
+	<center><form action="#" method="post">
+		<p>Please enter your three side lengths, we will call them a, b, and c, below: </p>
+		<span>a: <input type="text" name="data1" style = "width:7%"/></span>&nbsp;&nbsp;
+		<span>b: <input type="text" name="data2" style = "width:7%"/></span>&nbsp;&nbsp;
+		<span>c: <input type="text" name="data3" style = "width:7%"/></span>&nbsp;&nbsp;
+
+		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
+	</form>
+	<hr/>
+	<br><br><br>
+		<h3 style="color: green">What is Heron's Formula?? What does it do??</h3>
+		<br>
+		<p style="padding-left: 200px; padding-right: 200px;"><b>This formula comes from pythagorean theorem in combination with the basic formula for the area of a triangle: bh/2. <br>We can use this to find the area of a triangle without finding the height. It is extremely useful.<br>√s(s-a)(s-b)(s-c)<br><br>Please watch the below video if you have any questions<br></b></p>
+		<iframe width="591" height="333" src="https://www.youtube.com/embed/-YI6UC4qVEY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</center>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}

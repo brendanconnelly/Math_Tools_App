@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Quadratic Calculator{% endblock %}
+
+{% block title %}Welcome to this Quadratic Calculator{% endblock %}
+
+
+{% block shortdesciption %}This is a calculator to determine the solutions to Quadratic Equations in the form of ax² + bx + c = 0{% endblock %}
+
+{% block content %}
+	<center><form action="#" method="post">
+		<p>Please enter your a, b, and c below: </p>
+		<span>a: <input type="text" name="data1" style = "width:7%"/></span>&nbsp;&nbsp;
+		<span>b: <input type="text" name="data2" style = "width:7%"/></span>&nbsp;&nbsp;
+		<span>c: <input type="text" name="data3" style = "width:7%"/></span>&nbsp;&nbsp;
+
+		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
+	</form>
+	<hr/>
+	<br><br><br>
+		<h3 style="color: green">What is the Quadratic Formula??</h3>
+		<br>
+		<p><b>This formula comes from our initial format for a quadratic. We can use the technique completing the square to develop this formula. </b></p>
+		<ol type="i" style="text-align: center; padding: 0;">
+		<li> &nbsp;  ax² + bx + c = 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is our initial format </li>
+		<li> &nbsp;   ax² + bx = –c  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We first subtract c </li>
+		<li> &nbsp;  x² + (b/a)x = -(c/a) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then divide by a</li>
+		<li> &nbsp;   x² + (b/a)x + (b²/4a²) = -(c/a) + (b²/4a²) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Complete the square</li>
+		<li> &nbsp;  x² + (b/a)x + (b²/4a²) = (b²/4a²) - (4ac/4a²) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; And make a common denominator </li>
+		<li> &nbsp;  x² + (b/a)x + (b²/4a²) = (b² - 4ac)/4a² &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Combine the fractions on the right </li>
+		<li> &nbsp;  (x + (b/2a))² = (b² - 4ac)/4a² &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Finish the square </li>
+		<li> &nbsp;   x + (b/2a) = √(b² - 4ac)/2a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Take the square root </li>
+		<li> &nbsp;  x = -b ± √(b² - 4ac) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; And solve </li>
+		<li>   ━━━━━━━━━━━━━ &nbsp;&nbsp;&nbsp;</li>
+		<li>  2a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>
+	</ol>
+	<img width="300px" src="https://quadraticequation.net/wp-content/uploads/2019/02/unnamed.png"  alt="The Quadratic Formula"/>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}
