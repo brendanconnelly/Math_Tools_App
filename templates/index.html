@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
-{% block toptitle %}Quadratic Calculator{% endblock %}
+{% block toptitle %}Quadratic Formula Calculator{% endblock %}
 
 {% block title %}Welcome to this Quadratic Calculator{% endblock %}
 
 
-{% block shortdesciption %}This is a calculator to determine the solutions to Quadratic Equations in the form of ax² + bx + c = 0{% endblock %}
+{% block shortdesciption %}This is a calculator to determine the solutions to Quadratic Equations in the form of ax² + bx + c = 0 using the Quadratic Formula or by Factoring if possible{% endblock %}
 
 {% block content %}
 	<center><form action="#" method="post">
@@ -13,7 +13,8 @@
 		<span>a: <input type="text" name="data1" style = "width:7%"/></span>&nbsp;&nbsp;
 		<span>b: <input type="text" name="data2" style = "width:7%"/></span>&nbsp;&nbsp;
 		<span>c: <input type="text" name="data3" style = "width:7%"/></span>&nbsp;&nbsp;
-
+		<div><input type="checkbox" id="Input" name="Input" value="True">
+				<label for="Input"> Solve by the Quadratic Formula Only</label></div>
 		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
 	</form>
 	<hr/>

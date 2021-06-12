@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
-{% block toptitle %}Quadratic Calculator Results{% endblock %}
+{% block toptitle %}Rational Roots of Any Polynomial - Results{% endblock %}
 
-{% block title %}Quadratic Calculator Results{% endblock %}
+{% block title %}Rational Roots of Any Polynomial - Results{% endblock %}
 
-{% block shortdesciption %}This is a calculator to determine the solutions to Quadratic Equations in the form of ax² + bx + c = 0{% endblock %}
+{% block shortdesciption %}This is a calculator to identify and check possible solutions to polynomials using the rational root theorem.{% endblock %}
 
 {% block content %}
-	{% for x in range(100) %}
+	{% for x in range(1000) %}
 		{% if content[x] != "" %}
 			<p><center>{{content[x]}}</center></p>
 		{% endif %}
@@ -19,6 +19,6 @@
 		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
 	</form></div>
 	<div align="left"><form action="#" method="post">
-		<a href="/quad/"><input type="button" value="Back" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+		<a href="/rationalroots/"><input type="button" value="Back" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
 	</form></div>
 {% endblock %}

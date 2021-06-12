@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Rational Roots of Any Polynomial{% endblock %}
+
+{% block title %}Rational Roots of Any Polynomial{% endblock %}
+
+{% block shortdesciption %}This is a calculator to identify and check possible solutions to polynomials using the rational root theorem.{% endblock %}
+
+{% block content %}
+	<center><form action="#" method="post">
+		<p>You may enter the polynomial below. Put spaces between the coefficents of the polynomial: </p>
+		<div>Your polynomial: <input type="text" name="data" style = "width:20%"/></div>
+		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
+	</form>
+	<hr/>
+	<br><br><br>
+		<h3 style="color: green">What is the Rational Root Theorem??</h3>
+		<br>
+		<p style="padding-left: 200px; padding-right: 200px;">Using the properities of any polynomial, factoring, and synthetic division, we can identify possible rational roots. From here, we can check these solutions with synthetic division. <br><br><b>Check out this Khan Academy Video, also on a different page, about synthetic division. </b><br></p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/1byR9UEQJN0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}

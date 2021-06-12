@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
-{% block toptitle %}Quadratic Calculator Results{% endblock %}
+{% block toptitle %}Cross Base Calculator Results{% endblock %}
 
-{% block title %}Quadratic Calculator Results{% endblock %}
+{% block title %}Cross Base Calculator Results{% endblock %}
 
-{% block shortdesciption %}This is a calculator to determine the solutions to Quadratic Equations in the form of ax² + bx + c = 0{% endblock %}
+{% block shortdesciption %}This is a calculator to add, subtract, multiply, and divide numbers in any base. It will follow order of operations but will not recongize parethesis or exponents{% endblock %}
 
 {% block content %}
 	{% for x in range(100) %}
@@ -19,6 +19,6 @@
 		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
 	</form></div>
 	<div align="left"><form action="#" method="post">
-		<a href="/quad/"><input type="button" value="Back" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+		<a href="/baseoperations/"><input type="button" value="Back" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
 	</form></div>
 {% endblock %}

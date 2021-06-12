@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Significant Figures Counter{% endblock %}
+
+{% block title %}Significant Figures Counter{% endblock %}
+
+
+{% block shortdesciption %}This page is designed to determine the number of significant figures of any number. {% endblock %}
+
+{% block content %}
+	<center><form action="#" method="post">
+		<span>Your Number: <input type="text" name="num" style = "width:20%"/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
+	</form>
+	<hr/>
+	<br><br><br>
+		<h3 style="color: green">What are Signficant Figures(Sig Figs)?</h3>
+		<br>
+		<p style="padding-left: 200px; padding-right: 200px;"><b>Sig figs essentially are the digits of a number that have meaning. They are used often in science and are a common system of rounding.<br><br>An easy way to think about the concept is to think about unit convesions. For instance, 2400 cm should have the same value or certainty as 24m does. Sig figs are a way to do this. Some sig fig rules are listed below: </b></p>
+		<br></center>
+		<ul>
+		  <li>Non-zero digits are always significant</li>
+		  <li>Any zeros between two significant digits are significant</li>
+		  <li>Leading zeros are not significant</li>
+		  <li>Trailing zeros to the right of the decimal are significant</li>
+		  <li>Trailing zeros in a whole number with no decimal shown are not significant.</li>
+		</ul>  
+		<br><br>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+	<div align="left"><form action="#" method="post">
+		<a href="/shortcalcs/"><input type="button" value="More Calculators" style = "width:15%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}

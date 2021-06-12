@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Cross Base Calculator{% endblock %}
+
+{% block title %}Cross Base Calculator{% endblock %}
+
+{% block shortdesciption %}This is a calculator to add, subtract, multiply, and divide numbers in any base. It will follow order of operations but will not recongize parethesis or exponents.{% endblock %}
+
+{% block content %}
+	<center><form action="#" method="post">
+		<p>You may enter your expression below, using the letter b to show what base each value is in. Also, please enter what base you would like the result to be in. We will convert it to any base as long as the answer is an integer value in base 10. </p>
+		<span>Your expression: <input type="text" name="data" style = "width:20%"/></span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span>Base: <input type="text" name="base" style = "width:10%"/></span>
+		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
+	</form>
+	<hr/>
+	<br><br><br>
+		<h3 style="color: green">How do you use this calculator?? What are different bases?</h3>
+		<br>
+		<p style="padding-left: 200px; padding-right: 200px;"><b>This calculator will add, subtract, multiply, and divide any numbers in any base. For instance, if you enter ABCDEFb20 - (45)(32)b56 * AAb12, it will subtract the (45)(32) in base 56 times AA or (10)(10) in base 12 all from ABCDEF or (10)(11)(12)(13)(14)(15) in base 20. We use the letters A - Z to represent the digits 10 thru 35. If you do not want to use the letters or want to represent a value greater than 35, you can enter every value in that number with parenthesis around it.</b><br><br>If you do not know what different bases are or what they mean, we highly recommend that you check out the base converter page before coming to this page. But, essentially, numbers we normally use are in base 10. For instance, 256 is 2 * 10² + 5 * 10¹ + 6 * 10⁰. In other bases, the ten would be replaced with that base. Another key apsect to note is that in base 10, the greatest singular numerical value we have is 9. So if you are counting in base 20, you would count up singular values to 19 and then go to 10 and up from there. <b></br> <b> Here is the link to the Base Converter page</b> <br> <br></p>
+		<br>
+		<form action="#" method="post">
+			<a href="/base/"><input type="button" value="Base Converter" style = "height: 20%; width: 40%; color: #fffefc; background-color: #062961; font-size: 24px"/></a>
+		</form>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}
