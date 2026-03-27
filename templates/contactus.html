@@ -1,14 +1,21 @@
 {% extends "base.html" %}
 
-{% block toptitle %}Contact Us{% endblock %}
-
-{% block title %}Contact Us{% endblock %}
-
-{% block shortdesciption %}My name is Brendan Connelly. I am a high school student. <br><br>This website just contains a lot of what I have been working on over the past year (mostly 2020). <br><br>If you would like to contact me, you can email me at <a href= "mailto: contactus.mathtools@gmail.com">contactus.mathtools@gmail.com.<a> {% endblock %}
-
+{% block toptitle %}Contact{% endblock %}
+{% block title %}Contact{% endblock %}
+{% block shortdesciption %}Built in 2020 by Brendan Connelly as a high school project.{% endblock %}
 
 {% block content %}
-	<div align="right"><form action="#" method="post">
-		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
-	</form></div>
+<div class="form-card">
+  <p style="font-size:.9375rem;color:var(--text-muted);line-height:1.75">
+    This site is a collection of math calculators built to show step-by-step work. If you have questions, find a bug, or just want to reach out:
+  </p>
+  <p style="margin-top:1rem;font-size:.9375rem">
+    <a href="mailto:contactus.mathtools@gmail.com" style="color:var(--accent);font-weight:500">contactus.mathtools@gmail.com</a>
+  </p>
+</div>
+
+<div class="page-actions">
+  <span></span>
+  <a href="/" class="btn btn-ghost">← Home</a>
+</div>
 {% endblock %}

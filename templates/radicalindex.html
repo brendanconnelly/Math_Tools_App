@@ -1,22 +1,24 @@
 {% extends "base.html" %}
 
-{% block toptitle %}Radical Simplification Calculator{% endblock %}
-
-{% block title %}Radical Simplification Calculator{% endblock %}
-
-
-{% block shortdesciption %}This is a calculator to simplify any radical. You may enter decimal numbers. If your number is too large or complex, it will be rejected. {% endblock %}
+{% block toptitle %}Radical Simplification{% endblock %}
+{% block title %}Radical Simplification{% endblock %}
+{% block shortdesciption %}Simplify any square root. Decimals are accepted and converted to exact radical form.{% endblock %}
 
 {% block content %}
-	<center><form action="#" method="post">
-		<span>Your Number: <input type="text" name="num" style = "width:20%"/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
-	</form>
-	<hr/>
-	<div align="right"><form action="#" method="post">
-		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
-	</form></div>
-	<div align="left"><form action="#" method="post">
-		<a href="/shortcalcs/"><input type="button" value="More Calculators" style = "width:15%; color:white; background-color: #004d99; font-size: 24px"/></a>
-	</form></div>
+<div class="form-card">
+  <form method="post">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Number under the radical</label>
+        <input type="text" name="num" class="w-md" placeholder="72">
+      </div>
+      <button type="submit" class="btn btn-primary">Simplify</button>
+    </div>
+  </form>
+</div>
+
+<div class="page-actions">
+  <a href="/shortcalcs/" class="btn btn-ghost">← More Calculators</a>
+  <a href="/" class="btn btn-ghost">Home</a>
+</div>
 {% endblock %}
