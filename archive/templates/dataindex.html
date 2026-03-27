@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Mean, Median, etc. Calculator{% endblock %}
+
+{% block title %}Mean, Median, etc. Calculator{% endblock %}
+
+{% block shortdesciption %}This is a calculator to give a basic analysis of a list of numbers{% endblock %}
+
+{% block content %}
+	<center><form action="#" method="post">
+		<p>Please enter your numbers below. Put spaces between your values.</p>
+		<p><input type="text" name="data" style = "width:20%"/></p>
+		<p><input type="submit" value="Submit" style = "width:10%; color:brown"/></p>
+	</form>
+	<hr/>
+	<br><br><br>
+		<h3 style="color: green">What is a Mean? What is a Median?</h3>
+		<br>
+		<p style="padding-left: 200px; padding-right: 200px;">There are a few things we calculate from your set of numbers. We find the mean of your set, the Mean Absolute Deviation, the percent deviation, the range, the median, the mode, and lastly we just tell you how many numbers your set had.<br><br>To calculate mean, more commonly known as average, you just need to add up all of your numbers and divide that sum by the number of numbers you have. Median is really just the middle number, or the average of the two middle numbers, in your set. Range is just the largest number minus the smallest and mode is the most frequent number(if there are multiple we just take the smaller). <br><br><b>The last thing we calculate is mean absolute deviation and percent deviation. This is more complicated and we strongly encourage you to watch the below video. <br><br></b></p>
+
+	<iframe width="620" height="330" src="https://www.youtube.com/embed/GdIkEngwGNU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</center>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}

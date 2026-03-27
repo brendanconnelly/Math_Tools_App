@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Area of Any Regular Polygon{% endblock %}
+
+{% block title %}Area of Any Regular Polygon{% endblock %}
+
+
+{% block shortdesciption %}This is a calculator to find the area of any regular polygon given the side length and the number of sides. {% endblock %}
+
+{% block content %}
+	<i>*Code and idea contributed by Riley Bonner</i>
+	<center><form action="#" method="post">
+		<span>Number of sides: <input type="text" name="num" style = "width:10%"/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span>&nbsp;&nbsp;&nbsp;Side Lengths: <input type="text" name="side" style = "width:10%"/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
+	</form>
+	<hr/>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+	<div align="left"><form action="#" method="post">
+		<a href="/shortcalcs/"><input type="button" value="More Calculators" style = "width:15%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}

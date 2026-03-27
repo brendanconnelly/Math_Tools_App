@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Derivative Calculator{% endblock %}
+
+{% block title %}Derivative Calculator{% endblock %}
+
+
+{% block shortdesciption %}This is a calculator to determine any derivative of any polynomial.{% endblock %}
+
+{% block content %}
+	<center><form action="#" method="post">
+		<p>You may enter both the polynomial and the derivative you want. Put spaces between the coefficents of the polynomial. And then please enter the derivative you want: </p>
+		<span>Your polynomial: <input type="text" name="poly" style = "width:20%"/></span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span>Derivative number: <input type="text" name="dernum" style = "width:10%"/></span>
+		<div><br><input type="submit" value="Submit" style = "width:10%; color:brown"/></div>
+	</form>
+	<hr/>
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+	<div align="left"><form action="#" method="post">
+		<a href="/shortcalcs/"><input type="button" value="More Calculators" style = "width:15%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}

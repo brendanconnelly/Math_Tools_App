@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Permutations and Combinations Calculator Results{% endblock %}
+
+{% block title %}Permutations and Combinations Calculator Results{% endblock %}
+
+{% block shortdesciption %}This will add, subtract, multiply, and divide combination and permuation statements. It will follow order of operations but will not recongize parethesis or exponents.{% endblock %}
+
+{% block content %}
+	{% for x in range(1000) %}
+		{% if content[x] != "" %}
+			<p><center>{{content[x]}}</center></p>
+		{% endif %}
+		{% if content[x] == "" %}
+			<br>
+		{% endif %}
+	{% endfor %}
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+	<div align="left"><form action="#" method="post">
+		<a href="/combine/"><input type="button" value="Back" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+{% endblock %}

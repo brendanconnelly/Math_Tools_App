@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block toptitle %}Derivative Calculator Results{% endblock %}
+
+{% block title %}Derivative Calculator Results{% endblock %}
+
+{% block shortdesciption %}This is a calculator to determine any derivative of any polynomial.{% endblock %}
+
+{% block content %}
+	{% for x in range(20) %}
+		{% if content[x] != "" %}
+			<p><center>{{content[x]}}</center></p>
+		{% endif %}
+		{% if content[x] == "" %}
+			<br>
+		{% endif %}
+	{% endfor %}
+	<div align="right"><form action="#" method="post">
+		<a href="/"><input type="button" value="Home" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+	<div align="left"><form action="#" method="post">
+		<a href="/shortcalcs/derivative/"><input type="button" value="Back" style = "width:10%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+	<br/>
+	<div align="left"><form action="#" method="post">
+		<a href="/shortcalcs/"><input type="button" value="More Calculators" style = "width:15%; color:white; background-color: #004d99; font-size: 24px"/></a>
+	</form></div>
+
+{% endblock %}
