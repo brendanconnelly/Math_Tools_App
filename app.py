@@ -1905,7 +1905,7 @@ def rationalrootsresults(data):
 def baseoperationshome():
 	if request.method == "POST":
 		try:
-			userstring = str(request.form["data"])
+			userstring = str(request.form["data"]).replace("/", "!")
 			userbase = int(request.form["base"])
 			return redirect(url_for("baseoperationsresults", userstring = userstring, userbase = userbase))
 		except:
@@ -1916,6 +1916,7 @@ def baseoperationshome():
 @app.route("/baseoperations/<userstring>/<userbase>", methods=["POST", "GET"])
 def baseoperationsresults(userstring, userbase):
 	try:
+		userstring = userstring.replace("!", "/")
 		result = baseoperate(userstring, userbase)
 	except:
 		return redirect(url_for("baseoperationshome"))
