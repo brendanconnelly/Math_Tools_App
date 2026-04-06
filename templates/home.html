@@ -6,56 +6,60 @@
 
 {% block content %}
 <p class="section-label">Full Calculators</p>
-<div class="tool-grid">
-  <a href="/quad/" class="tool-card">
-    <div class="tool-icon">x²</div>
-    <div class="tool-text"><div class="tool-name">Quadratic Equation</div><div class="tool-sub">Factor or solve ax² + bx + c = 0</div></div>
-    <span class="tool-arrow">›</span>
-  </a>
-  <a href="/synthetic/" class="tool-card">
-    <div class="tool-icon">f(x)</div>
-    <div class="tool-text"><div class="tool-name">Synthetic Division</div><div class="tool-sub">Polynomial division by x − r</div></div>
-    <span class="tool-arrow">›</span>
-  </a>
-  <a href="/rationalroots/" class="tool-card">
-    <div class="tool-icon">p/q</div>
-    <div class="tool-text"><div class="tool-name">Rational Roots</div><div class="tool-sub">All rational zeros of any polynomial</div></div>
-    <span class="tool-arrow">›</span>
-  </a>
-  <a href="/heron/" class="tool-card">
-    <div class="tool-icon">△</div>
-    <div class="tool-text"><div class="tool-name">Heron's Formula</div><div class="tool-sub">Triangle area from three side lengths</div></div>
-    <span class="tool-arrow">›</span>
-  </a>
-  <a href="/pythagorean/" class="tool-card">
-    <div class="tool-icon">c²</div>
-    <div class="tool-text"><div class="tool-name">Pythagorean Theorem</div><div class="tool-sub">Missing side of any right triangle</div></div>
-    <span class="tool-arrow">›</span>
-  </a>
-  <a href="/numinfo/" class="tool-card">
-    <div class="tool-icon">#</div>
-    <div class="tool-text"><div class="tool-name">Number Info</div><div class="tool-sub">Prime factors, divisors, factorial form</div></div>
-    <span class="tool-arrow">›</span>
-  </a>
-  <a href="/data/" class="tool-card">
-    <div class="tool-icon">x̄</div>
-    <div class="tool-text"><div class="tool-name">Statistics</div><div class="tool-sub">Mean, median, MAD, range, mode</div></div>
-    <span class="tool-arrow">›</span>
-  </a>
-  <a href="/combine/" class="tool-card">
-    <div class="tool-icon">nCr</div>
-    <div class="tool-text"><div class="tool-name">Combinations &amp; Permutations</div><div class="tool-sub">Evaluate nCr and nPr expressions</div></div>
-    <span class="tool-arrow">›</span>
-  </a>
-  <a href="/base/" class="tool-card">
-    <div class="tool-icon">₂→</div>
-    <div class="tool-text"><div class="tool-name">Base Converter</div><div class="tool-sub">Convert numbers between any bases</div></div>
-    <span class="tool-arrow">›</span>
-  </a>
-  <a href="/baseoperations/" class="tool-card">
-    <div class="tool-icon">⊕</div>
-    <div class="tool-text"><div class="tool-name">Cross-Base Calculator</div><div class="tool-sub">Arithmetic with mixed-base numbers</div></div>
-    <span class="tool-arrow">›</span>
-  </a>
+<div class="tool-grid-columns">
+  <div class="tool-grid">
+    <a href="/quad/" class="tool-card">
+      <div class="tool-icon">x²</div>
+      <div class="tool-text"><div class="tool-name">Quadratic Equation</div><div class="tool-sub">Factor or solve ax² + bx + c = 0</div></div>
+      <span class="tool-arrow">›</span>
+    </a>
+    <a href="/synthetic/" class="tool-card">
+      <div class="tool-icon">f(x)</div>
+      <div class="tool-text"><div class="tool-name">Synthetic Division</div><div class="tool-sub">Polynomial division by x − r</div></div>
+      <span class="tool-arrow">›</span>
+    </a>
+    <a href="/rationalroots/" class="tool-card">
+      <div class="tool-icon">p/q</div>
+      <div class="tool-text"><div class="tool-name">Rational Roots</div><div class="tool-sub">All rational zeros of any polynomial</div></div>
+      <span class="tool-arrow">›</span>
+    </a>
+    <a href="/heron/" class="tool-card">
+      <div class="tool-icon">△</div>
+      <div class="tool-text"><div class="tool-name">Heron's Formula</div><div class="tool-sub">Triangle area from three side lengths</div></div>
+      <span class="tool-arrow">›</span>
+    </a>
+    <a href="/pythagorean/" class="tool-card">
+      <div class="tool-icon">c²</div>
+      <div class="tool-text"><div class="tool-name">Pythagorean Theorem</div><div class="tool-sub">Missing side of any right triangle</div></div>
+      <span class="tool-arrow">›</span>
+    </a>
+  </div>
+  <div class="tool-grid">
+    <a href="/numinfo/" class="tool-card">
+      <div class="tool-icon">#</div>
+      <div class="tool-text"><div class="tool-name">Number Info</div><div class="tool-sub">Prime factors, divisors, factorial form</div></div>
+      <span class="tool-arrow">›</span>
+    </a>
+    <a href="/data/" class="tool-card">
+      <div class="tool-icon">x̄</div>
+      <div class="tool-text"><div class="tool-name">Statistics</div><div class="tool-sub">Mean, median, MAD, range, mode</div></div>
+      <span class="tool-arrow">›</span>
+    </a>
+    <a href="/combine/" class="tool-card">
+      <div class="tool-icon">nCr</div>
+      <div class="tool-text"><div class="tool-name">Combinations &amp; Permutations</div><div class="tool-sub">Evaluate nCr and nPr expressions</div></div>
+      <span class="tool-arrow">›</span>
+    </a>
+    <a href="/base/" class="tool-card">
+      <div class="tool-icon">₂→</div>
+      <div class="tool-text"><div class="tool-name">Base Converter</div><div class="tool-sub">Convert numbers between any bases</div></div>
+      <span class="tool-arrow">›</span>
+    </a>
+    <a href="/baseoperations/" class="tool-card">
+      <div class="tool-icon">⊕</div>
+      <div class="tool-text"><div class="tool-name">Cross-Base Calculator</div><div class="tool-sub">Arithmetic with mixed-base numbers</div></div>
+      <span class="tool-arrow">›</span>
+    </a>
+  </div>
 </div>
 {% endblock %}
